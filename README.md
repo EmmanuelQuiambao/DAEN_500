@@ -9,11 +9,13 @@ The text below contains my responses to the DAEN 500 Final exam for Spring 2021.
 
 3 - See Files DAEN_500_Q3_EQUIAMBAO.r / DAEN_500_Q3_EQUIAMBAO_ScreenShot.png
 
-4A - See File DAEN_500_Q5_EQUIAMBAO_written
+4A - See File DAEN_500_Q4_EQUIAMBAO_written
 
 5A - See File DAEN_500_Q5_EQUIAMBAO_written
 
-5B- For Linear Regression Model see files:
+5B- 
+    For Linear Regression Model see files:
+
       -DAEN_500_Q5B_EQUIAMBAO_MLINEAR_REGRESSION.R
       -DAEN_500_Q5B_EQUIAMBAO_MLINEAR_REGRESSION_Results
       -DAEN_500_Q5B_EQUIAMBAO_Scatter1.png
