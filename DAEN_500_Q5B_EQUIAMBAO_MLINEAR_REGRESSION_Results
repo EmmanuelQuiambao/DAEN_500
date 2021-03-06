@@ -1,0 +1,45 @@
+> #Import NBA DATA from https://www.kaggle.com/noahgift/social-power-nba?select=nba_2016_2017_100.csv
+> #first download file and save to your working directory. 
+> analytic <- read.csv(file="nba_2016_2017_100.csv", header=TRUE, sep=",")
+> Model1 = lm(W_PCT ~ PTS + SALARY_MILLIONS, data=analytic) 
+> summary(Model1)
+
+Call:
+lm(formula = W_PCT ~ PTS + SALARY_MILLIONS, data = analytic)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.44749 -0.08684  0.00413  0.08611  0.38497 
+
+Coefficients:
+                Estimate Std. Error t value Pr(>|t|)    
+(Intercept)     0.416596   0.035675  11.677   <2e-16 ***
+PTS             0.003980   0.002779   1.432    0.155    
+SALARY_MILLIONS 0.002659   0.002315   1.149    0.253    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.1543 on 97 degrees of freedom
+Multiple R-squared:  0.08893,	Adjusted R-squared:  0.07014 
+F-statistic: 4.734 on 2 and 97 DF,  p-value: 0.01092
+
+> 
+> library (broom)
+> library(tidyverse)
+> 
+> 
+> myplot <- ggplot(data = analytic) +
++   geom_point(mapping = aes(x=SALARY_MILLIONS, y=W_PCT)) +
++   ggtitle("Winning Percentage and Salary")
+> print(myplot)
+> 
+> myplot <- ggplot(data = analytic) +
++   geom_point(mapping = aes(x=PTS, y=W_PCT)) +
++   ggtitle("Winning Percentage and Points Per Game")
+> print(myplot)
+> 
+> 
+> 
+> plot(fitted(Model1), residuals(Model1), ylab="Residuals", xlab="Fitted values")
+> qqnorm(residuals(Model1))
+> qqline(residuals(Model1))
