@@ -3,11 +3,11 @@ DAEN_500_FINAL_EXAM_EQUIAMBAO
 
 The text below contains my responses to the DAEN 500 Final exam for Spring 2021. 
 
-1 - See File DAEN_500_Q1_EQUIAMBAO.py
+1 - See Files DAEN_500_Q1_EQUIAMBAO.py /File DAEN_500_Q1_EQUIAMBAO_ScreeShot.png
 
-2 - See File DAEN_500_Q2_EQUIAMBAO.py
+2 - See Files DAEN_500_Q2_EQUIAMBAO.py / DAEN_500_Q2_EQUIAMBAO_ScreenShot.png
 
-3 - See File DAEN_500_Q4_EQUIAMBAO.r
+3 - See Files DAEN_500_Q3_EQUIAMBAO.r / DAEN_500_Q3_EQUIAMBAO_ScreenShot.png
 
 4A - 
 
