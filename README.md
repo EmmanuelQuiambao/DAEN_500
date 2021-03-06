@@ -28,8 +28,7 @@ In a logistic regressionmodel you are trying to find out if the predictor variab
       -DAEN_500_Q5B_EQUIAMBAO_Scatter2.png
       -DAEN_500_Q5B_EQUIAMBAO_Normality_Plot.png
       -DAEN_500_Q5B_EQUIAMBAO_Residual_Scatter.png
-      
-      For Logistic Regression Model see files:
+    For Logistic Regression Model see files:
       -DAEN_500_Q5B_EQUIAMBAO_LOGISTIC_REGRESSION.R
       -DAEN_500_Q5B_EQUIAMBAO_LOGISTC_REGRESSION_Results
       -DAEN_500_Q5B_EQUIAMBAO_LOGISTIC_Scatter2.png
