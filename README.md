@@ -19,4 +19,10 @@ In linear regression you trying to find if out if linear relationship exists to 
 
 
 
-5B-
+5B- For Linear Regression Model see files:
+      -DAEN_500_Q5B_EQUIAMBAO_MLINEAR_REGRESSION.R
+      -DAEN_500_Q5B_EQUIAMBAO_MLINEAR_REGRESSION_Results
+      -DAEN_500_Q5B_EQUIAMBAO_Scatter1.png
+      -DAEN_500_Q5B_EQUIAMBAO_Scatter2.png
+      -DAEN_500_Q5B_EQUIAMBAO_Normality_Plot.png
+      -DAEN_500_Q5B_EQUIAMBAO_Residual_Scatter.png
