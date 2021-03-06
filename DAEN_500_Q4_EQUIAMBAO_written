@@ -1,0 +1,18 @@
+What is a component – Provide a description (5 points)
+  
+  A component is a combination of predictor variables.  Typically a combination of predictor variables that are highly 
+  correlated.
+
+
+Principal Component Analysis – Provide a description.(5 points)
+  Principal Component Analysis (PCA) is the process of reducing variables into components. This helps to make analysis 
+  simpler for the data set. in PCA, the representation of the data is rotated in the direction of the new principal 
+  components.  The process of PCA first involves creating a correlation matrix of each predicted variable.  Next, 
+  Eigenvectors must be found and their corresponding eigenvalues. An eigenvector is a vector that results in the scalar
+  multiple of the correlation matrix.  Once eigenvectors are found they must be ranked by eigenalue which is the change
+  in vector length after the vector is multiplied by the eigenvector.  The highest eigenvector is use for the first principal
+  component and the second highest for the next and so on.  The principal component Z is calculated by multiplying each 
+  predictor variable by their corresponding value in the eigenvector.  Once all principal components have been calcualted,
+  they can be evaluated to see which principal components cause the highest variability.  the 
+  
+Provide an specific example of Principal Component Analysis(15 points)
