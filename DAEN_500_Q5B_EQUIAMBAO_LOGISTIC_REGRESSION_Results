@@ -1,0 +1,46 @@
+> library (broom)
+> 
+> #Load WHO stroke prediction data set downloaded from https://www.kaggle.com/fedesoriano/stroke-prediction-dataset
+> analytic2 <- read.csv(file="healthcare-dataset-stroke-data.csv", header=TRUE, sep=",")
+> 
+> 
+> 
+> plot(analytic2$age, analytic2$stroke, xlab='age',ylab='Has Had a Stroke')
+> 
+> model = glm(formula = stroke ~ age, family = binomial, data = analytic2)
+> summary(model)
+
+Call:
+glm(formula = stroke ~ age, family = binomial, data = analytic2)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.7568  -0.3277  -0.1753  -0.0833   3.7772  
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)    
+(Intercept) -7.231441   0.334980  -21.59   <2e-16 ***
+age          0.074727   0.004922   15.18   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 1990.4  on 5109  degrees of freedom
+Residual deviance: 1616.3  on 5108  degrees of freedom
+AIC: 1620.3
+
+Number of Fisher Scoring iterations: 7
+
+> 
+> 
+> 
+> mod.hit = model
+> pihat = mod.hit$fitted.values
+> pihat[1:10]
+         1          2          3          4          5          6          7          8          9         10 
+0.09754966 0.06457870 0.22212856 0.02738926 0.20948514 0.23530793 0.15424791 0.11152094 0.05611688 0.19737876 
+> evresids = residuals(mod.hit)
+> resids = residuals(mod.hit, type = "response")
+> Presids = residuals(mod.hit, type = "pearson")
+> plot(pihat, Presids, xlab = "Predicted probability", ylab = "Pearson residual")
