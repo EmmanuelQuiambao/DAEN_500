@@ -21,6 +21,7 @@ between actual binary responses and the estimated probabilities.
 
 Response for 5B
 For Linear Regression Model see files:
+      -nba_2016_2017_100.csv
       -DAEN_500_Q5B_EQUIAMBAO_MLINEAR_REGRESSION.R
       -DAEN_500_Q5B_EQUIAMBAO_MLINEAR_REGRESSION_Results
       -DAEN_500_Q5B_EQUIAMBAO_Scatter1.png
@@ -29,6 +30,7 @@ For Linear Regression Model see files:
       -DAEN_500_Q5B_EQUIAMBAO_Residual_Scatter.png
       
     For Logistic Regression Model see files:
+      -healthcare-dataset-stroke-data.csv
       -DAEN_500_Q5B_EQUIAMBAO_LOGISTIC_REGRESSION.R
       -DAEN_500_Q5B_EQUIAMBAO_LOGISTC_REGRESSION_Results
       -DAEN_500_Q5B_EQUIAMBAO_LOGISTIC_Scatter2.png
