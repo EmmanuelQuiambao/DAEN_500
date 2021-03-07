@@ -1,7 +1,7 @@
 What is a component – Provide a description (5 points)
   
   A component is a combination of predictor variables.  Components are comprised of weights of predictor variables.
-  Weights are determined by analyizing all the correlations between predictor variables. 
+  Weights are determined by analyzing all the correlations between predictor variables. 
 
 Principal Component Analysis – Provide a description.(5 points)
 
@@ -9,7 +9,7 @@ Principal Component Analysis – Provide a description.(5 points)
   the representation of the data is rotated in the direction of the new principal components.  The step in PCA is to create
   a correlation matrix for all predictor variables.  Next, Eigenvectors must be found and their corresponding eigenvalues. 
   An eigenvector is a vector that results in the scalar multiple of the correlation matrix.  Once eigenvectors are found they 
-  must be ranked by eigenalue which is the change in vector length after the vector is multiplied by the eigenvector.  
+  must be ranked by eigenvalue which is the change in vector length after the vector is multiplied by the eigenvector.  
   The highest eigenvector is used for the first principal component, the second highest for the next, and so on.  
   The principal components are calculated by projecting the values of the eigenvector onto the values of each predictor variable. 
   Once all principal eigenvalues have been determined, they can be evaluated to see which principal components have high variance
