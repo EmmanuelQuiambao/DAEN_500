@@ -1,18 +1,24 @@
 What is a component – Provide a description (5 points)
   
-  A component is a combination of predictor variables.  Typically a combination of predictor variables that are highly 
-  correlated.
-
+  A component is a combination of predictor variables.  Components are comprised of weights of predictor variables.
+  Weights are determined by analyizing all the correlations between predictor variables. 
 
 Principal Component Analysis – Provide a description.(5 points)
-  Principal Component Analysis (PCA) is the process of reducing variables into components. This helps to make analysis 
-  simpler for the data set. in PCA, the representation of the data is rotated in the direction of the new principal 
-  components.  The process of PCA first involves creating a correlation matrix of each predicted variable.  Next, 
-  Eigenvectors must be found and their corresponding eigenvalues. An eigenvector is a vector that results in the scalar
-  multiple of the correlation matrix.  Once eigenvectors are found they must be ranked by eigenalue which is the change
-  in vector length after the vector is multiplied by the eigenvector.  The highest eigenvector is use for the first principal
-  component and the second highest for the next and so on.  The principal component Z is calculated by multiplying each 
-  predictor variable by their corresponding value in the eigenvector.  Once all principal components have been calcualted,
-  they can be evaluated to see which principal components cause the highest variability.  the 
+
+  Principal Component Analysis (PCA) is the process of reducing variables into components. In PCA, 
+  the representation of the data is rotated in the direction of the new principal components.  The step in PCA is to create
+  a correlation matrix for all predictor variables.  Next, Eigenvectors must be found and their corresponding eigenvalues. 
+  An eigenvector is a vector that results in the scalar multiple of the correlation matrix.  Once eigenvectors are found they 
+  must be ranked by eigenalue which is the change in vector length after the vector is multiplied by the eigenvector.  
+  The highest eigenvector is used for the first principal component, the second highest for the next, and so on.  
+  The principal components are calculated by projecting the values of the eigenvector onto the values of each predictor variable. 
+  Once all principal eigenvalues have been determined, they can be evaluated to see which principal components have high variance
+  and thus should be kept (especially those with an eigenvalue of 1 or higher). 
   
 Provide an specific example of Principal Component Analysis(15 points)
+  PCA can be put into use when it is suspected that multiple predictor variables are highly correlated.  For example, let's say we are examining
+  data from an NBA season and using players' total Field Goals Made (FGM), Points Per Game (PPG), Blocks, and Steals to predict a player's overall rating.  
+  We might suspect that FGM and PPG are highly correlated since Points Per Game has an influence on Field Goals Made. 
+  NBA player stats for a season can be imported into R to create a matrix containing the predictor variables FGM, PPG, Blocks, and Steals.  
+  The cor() function in R can be used to create a correlation matrix in R.  From there the eigen() can be called on the correlation matrix and the
+  resulting output will show the eigenvalues for each principal component and it can be determined which components have significant variance. 
