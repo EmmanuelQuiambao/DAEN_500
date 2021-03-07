@@ -14,8 +14,9 @@ The text below contains my responses to the DAEN 500 Final exam for Spring 2021.
 5A - See File DAEN_500_Q5_EQUIAMBAO_written
 
 5B- 
+   
     For Linear Regression Model see files:
-
+      -nba_2016_2017_100.csv
       -DAEN_500_Q5B_EQUIAMBAO_MLINEAR_REGRESSION.R
       -DAEN_500_Q5B_EQUIAMBAO_MLINEAR_REGRESSION_Results
       -DAEN_500_Q5B_EQUIAMBAO_Scatter1.png
@@ -24,6 +25,7 @@ The text below contains my responses to the DAEN 500 Final exam for Spring 2021.
       -DAEN_500_Q5B_EQUIAMBAO_Residual_Scatter.png
       
     For Logistic Regression Model see files:
+      -healthcare-dataset-stroke-data.csv
       -DAEN_500_Q5B_EQUIAMBAO_LOGISTIC_REGRESSION.R
       -DAEN_500_Q5B_EQUIAMBAO_LOGISTC_REGRESSION_Results
       -DAEN_500_Q5B_EQUIAMBAO_LOGISTIC_Scatter2.png
