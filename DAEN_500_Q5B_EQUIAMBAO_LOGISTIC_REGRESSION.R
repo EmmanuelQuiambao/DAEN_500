@@ -1,7 +1,8 @@
 
-library (broom)
+
 
 #Load WHO stroke prediction data set downloaded from https://www.kaggle.com/fedesoriano/stroke-prediction-dataset
+#place data set onto local directory
 analytic2 <- read.csv(file="healthcare-dataset-stroke-data.csv", header=TRUE, sep=",")
 
 
